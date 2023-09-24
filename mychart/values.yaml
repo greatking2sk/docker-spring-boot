@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: 801695787561.dkr.ecr.us-east-2.amazonaws.com/idan-ecr
+  repository: idanacrrepo4321.azurecr.io/greatking2sk/docker-spring-boot
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -37,7 +37,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: LoadBalancer
+  type: ClusterIP
   port: 80
 
 ingress:
